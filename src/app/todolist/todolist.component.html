@@ -1,16 +1,98 @@
-<div class="flex flex-col items-center justify-center p-4">
-    <form class="mb-4 w-full max-w-xs flex items-center gap-4">
-      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Add new todo">
-      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add</button>
-    </form>
-    <div class="w-full max-w-xs">
-      <ul class="list-reset">
-        <li class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow">
-          Todo Item 1
-          <button class="text-red-500 hover:text-red-700">Delete</button>
-        </li>
-        <!-- Repeat for each todo item -->
-      </ul>
+<div class="container flex gap-4 mx-auto w-fit">
+    <div class="flex flex-col items-center justify-start p-4">
+        <!-- form ng-content -->
+        <form class="mb-4 w-full max-w-xs flex items-center gap-4">
+            <input
+                [(ngModel)]="inputTodo"
+                (keyup.escape)="inputTodo = ''"
+                name="todo"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Add new todo"
+            />
+            <button
+                (click)="addTodo(inputTodo, todoList)"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+                Add
+            </button>
+        </form>
+        <div class="w-full max-w-xs">
+            <ul class="list-reset">
+                <!-- new syntax ng-content -->
+                @for (todo of todoList; track todo.id) {
+                <li
+                    (click)="setDone(todo.id)"
+                    class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow {{
+                        todo.completed ? 'line-through' : ''
+                    }}"
+                >
+                    {{ todo.todo }}
+                    <button
+                        (click)="deleteTodo(todo.id)"
+                        class="text-red-500 hover:text-red-700"
+                    >
+                        Delete
+                    </button>
+                </li>
+                }
+            </ul>
+        </div>
     </div>
-  </div>
-  
+
+    <div class="flex flex-col items-center justify-start p-4">
+        <form class="mb-4 w-full max-w-xs flex items-center gap-4">
+            <input
+                [(ngModel)]="oldInputTodo"
+                (keyup.escape)="oldInputTodo = ''"
+                name="oldTodo"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="Add new todo"
+            />
+            <button
+                (click)="addTodo(oldInputTodo, oldTodoList)"
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+                Add
+            </button>
+        </form>
+        <div class="w-full max-w-xs">
+            <ul class="list-reset">
+                <!-- old syntax ng-content-->
+                <li
+                    *ngFor="let todo of oldTodoList; trackBy: trackById"
+                    class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow {{
+                        todo.completed ? 'line-through' : ''
+                    }}"
+                >
+                    {{ todo.todo }}
+                    <button
+                        (click)="deleteTodo(todo.id)"
+                        class="text-red-500 hover:text-red-700"
+                    >
+                        Delete
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container flex gap-4 mx-auto w-fit">
+    <div class="flex flex-col items-center p-4">
+        <!-- form ng-content -->
+        <ng-content select="[form-content]" />
+
+        <div class="w-full max-w-xs">
+            <ng-content select="[new-todo-list]" />
+            <!-- new syntax ng-content -->
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center p-4">
+        <!-- old syntax ng-content -->
+        <ng-content select="[old-todo-list]" />
+    </div>
+</div>
