@@ -1,4 +1,4 @@
-<app-todolist #todoList>
+<!-- <app-todolist #todoList>
     <div form-content>
         <form class="mb-4 w-full max-w-xs flex items-center gap-4">
             <input [(ngModel)]="todoList.inputTodo" (keyup.escape)="todoList.inputTodo = ''" name="todo"
@@ -10,7 +10,7 @@
     </div>
     <div new-todo-list>
         <ul class="flex flex-col justify-between">
-            <!-- new syntax ng-content -->
+            new syntax ng-content
             @for (todo of todoList.todoList; track todo.id) {
             <li (click)="todoList.setDone(todo.id)"
                 class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow {{todo.completed ? 'line-through' : ''}}">
@@ -23,11 +23,41 @@
     <div old-todo-list class="flex flex-col justify-between h-full">
         <h1 class="text-center">Old Syntax</h1>
         <ul class="flex flex-col justify-between">
-            <!-- old syntax ng-content-->
+            old syntax ng-content
             <li *ngFor="let todo of todoList.todoList; " class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow {{todo.completed ? 'line-through' : ''}}">
                 {{todo.todo}}
                 <button (click)="todoList.deleteTodo(todo.id)" class="text-red-500 hover:text-red-700">Delete</button>
             </li>
         </ul>
     </div>
-</app-todolist>
+</app-todolist> -->
+<app-board-layout newMenu="true">
+    <div menu-item1>
+        <img
+            class="object-cover h-10"
+            src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
+            alt="Workflow"
+        />
+    </div>
+    <div menu-item2>Menu Item 2</div>
+    <div menu-item3>
+        <app-nav />
+    </div>
+
+    <div box1>Box 1 Content</div>
+    <div box2>Box 2 Content</div>
+    <div box3>Box 3 Content</div>
+    <div box4>Box 4 Content</div>
+    <div box5>Box 5 Content</div>
+    <div box6>Box 6 Content</div>
+    <div box7>Box 7 Content</div>
+    <div box8>Box 8 Content</div>
+    <div box9>Box 9 Content</div>
+    <div box10>Box 10 Content</div>
+    <div box11>Box 11 Content</div>
+    <div box12>Box 12 Content</div>
+
+    <div footer-item1>Footer Item 1</div>
+    <div footer-item2>Footer Item 2</div>
+    <div footer-item3>Footer Item 3</div>
+</app-board-layout>
