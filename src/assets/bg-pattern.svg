@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800">
+    <rect width="100%" height="100%" fill="transparent"></rect>
+    <g fill="url(#ffflurry-grad)">
+        <rect width="104" height="2" x="559" y="694" rx="1" transform="rotate(127, 611, 695)"
+            opacity="0.63"></rect>
+        <rect width="107" height="2" x="89.5" y="466" rx="1" transform="rotate(127, 143, 467)"
+            opacity="0.75"></rect>
+        <rect width="91" height="2" x="202.5" y="241" rx="1" transform="rotate(127, 248, 242)"
+            opacity="0.95"></rect>
+        <rect width="104" height="2" x="341" y="103" rx="1" transform="rotate(127, 393, 104)"
+            opacity="0.74"></rect>
+        <rect width="113" height="2" x="163.5" y="685" rx="1" transform="rotate(127, 220, 686)"
+            opacity="0.50"></rect>
+        <rect width="71" height="2" x="86.5" y="70" rx="1" transform="rotate(127, 122, 71)"
+            opacity="0.88"></rect>
+        <rect width="107" height="2" x="638.5" y="107" rx="1" transform="rotate(127, 692, 108)"
+            opacity="0.51"></rect>
+        <rect width="80" height="2" x="26" y="256" rx="1" transform="rotate(127, 66, 257)"
+            opacity="0.84"></rect>
+        <rect width="122" height="2" x="367" y="435" rx="1" transform="rotate(127, 428, 436)"
+            opacity="0.84"></rect>
+        <rect width="116" height="2" x="625" y="464" rx="1" transform="rotate(127, 683, 465)"
+            opacity="0.39"></rect>
+        <rect width="88" height="2" x="544" y="242" rx="1" transform="rotate(127, 588, 243)"
+            opacity="0.21"></rect>
+    </g>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="ffflurry-grad"
+            gradientTransform="rotate(270)">
+            <stop stop-color="hsl(238, 82%, 13%)" stop-opacity="1" offset="0%"></stop>
+            <stop stop-color="hsl(1.4, 100%, 67%)" stop-opacity="1" offset="45%"></stop>
+            <stop stop-color="hsl(167, 52%, 78%)" stop-opacity="1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+</svg>
