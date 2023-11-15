@@ -1,27 +1,46 @@
-# Todo
+# ByteBoardInterviews
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+## Overview
 
-## Development server
+ByteBoardInterviews is a state-of-the-art, Angular and TypeScript-powered platform, designed to revolutionize the technical interview process. Enhanced with Tailwind CSS for a sleek, responsive user interface, this web-based solution offers a multi-functional, collaborative canvas for interviewers and interviewees.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Key Features
 
-## Code scaffolding
+-   **Collaborative Interview Canvas:** Real-time interaction between interviewers and candidates.
+-   **File Uploads:** Easily upload and access candidate resumes and other relevant documents.
+-   **Question Auto-Generation:** AI-driven, dynamic generation of interview questions.
+-   **AI-Powered Analysis:** Utilize AI to analyze and test technical responses.
+-   **Cloud-Based Code Execution:** Run and evaluate code snippets directly in the cloud.
+-   **Integrated Note-Taking:** Keep track of thoughts and observations with in-built note-taking functionality.
+-   **Response Transcription & Summarization:** Automated conversion of spoken words into text, with key point summarization.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ByteBoardInterviews simplifies and enhances the technical hiring process, making it more efficient, insightful, and user-friendly.
 
-## Build
+## Built With
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-   **Angular**: For a robust and maintainable single-page application structure.
+-   **TypeScript**: Ensuring type safety and scalable application architecture.
+-   **Tailwind CSS**: For a customizable, utility-first approach to styling.
 
-## Running unit tests
+ByteBoardInterviews is the ultimate tool for tech recruiters and companies, streamlining the way tech talents are interviewed and assessed.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Dev server, Code scaffolding, Build, Running unit tests:
 
-## Running end-to-end tests
+```sh
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+ng g component component-name
+ng g directive|pipe|service|class|guard|interface|enum|module
+```
 
-## Further help
+```sh
+ng build
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+ng test
+```
+
+unit tests via [Karma](https://karma-runner.github.io).

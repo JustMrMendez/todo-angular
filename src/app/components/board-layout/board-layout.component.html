@@ -25,8 +25,7 @@
             (mouseleave)="onMouse($event)"
             [ngClass]="{
                 'md:!w-[calc(0.4/12*100%)]': layoutConfig.leftSidebar.collapsed,
-                'md:w-[calc(2/12*100%)]': layoutConfig.leftSidebar.collapsed,
-                'md:w-[calc(2/12*100%)]': layoutConfig.leftSidebar.isHovering
+                'md:w-[calc(2/12*100%)]': layoutConfig.leftSidebar.collapsed || layoutConfig.leftSidebar.isHovering,
             }"
             >
             <!-- 'hover:md:w-[calc(2/12*100%)]': layoutConfig.leftSidebar.keepCollapsedState && layoutConfig.leftSidebar.collapsed, -->

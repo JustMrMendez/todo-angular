@@ -1,0 +1,57 @@
+<!-- <app-todolist #todoList>
+    <div form-content>
+        <form class="mb-4 w-full max-w-xs flex items-center gap-4">
+            <input [(ngModel)]="todoList.inputTodo" (keyup.escape)="todoList.inputTodo = ''" name="todo"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                type="text" placeholder="Add new todo">
+            <button (click)="todoList.addTodo(todoList.inputTodo, todoList.todoList)"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add</button>
+        </form>
+    </div>
+    <div new-todo-list>
+        <ul class="flex flex-col justify-between">
+            new syntax ng-content
+            @for (todo of todoList.todoList; track todo.id) {
+            <li (click)="todoList.setDone(todo.id)"
+                class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow {{todo.completed ? 'line-through' : ''}}">
+                {{todo.todo}}
+                <button (click)="todoList.deleteTodo(todo.id)" class="text-red-500 hover:text-red-700">Delete</button>
+            </li>
+            }
+        </ul>
+    </div>
+    <div old-todo-list class="flex flex-col justify-between h-full">
+        <h1 class="text-center">Old Syntax</h1>
+        <ul class="flex flex-col justify-between">
+            old syntax ng-content
+            <li *ngFor="let todo of todoList.todoList; " class="flex items-center justify-between bg-white px-4 py-2 my-2 shadow {{todo.completed ? 'line-through' : ''}}">
+                {{todo.todo}}
+                <button (click)="todoList.deleteTodo(todo.id)" class="text-red-500 hover:text-red-700">Delete</button>
+            </li>
+        </ul>
+    </div>
+</app-todolist> -->
+<!-- <app-board-layout newMenu>
+    <div menu-item1>
+        <img
+            class="object-cover h-10"
+            src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
+            alt="Workflow"
+        />
+    </div>
+    <div menu-item2>Menu Item 2</div>
+    <div menu-item3>
+        <app-nav />
+    </div>
+
+    <div left-sidebar></div>
+
+    <div content-left>Box 1 Content</div>
+    <div content-right>Box 2 Content</div>
+
+    <div right-sidebar>Right Sidebar</div>
+
+    <div footer-item1>Footer Item 1</div>
+    <div footer-item2>Footer Item 2</div>
+    <div footer-item3>Footer Item 3</div>
+</app-board-layout> -->
