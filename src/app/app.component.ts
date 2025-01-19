@@ -15,7 +15,6 @@ import { NavComponent } from './components/nav/nav.component'
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
     imports: [
         CommonModule,
         RouterOutlet,

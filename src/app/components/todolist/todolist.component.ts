@@ -12,7 +12,6 @@ type Todo = {
     standalone: true,
     imports: [CommonModule, FormsModule],
     templateUrl: './todolist.component.html',
-    styleUrl: './todolist.component.scss',
 })
 export class TodolistComponent {
     todoList: Todo[] = [

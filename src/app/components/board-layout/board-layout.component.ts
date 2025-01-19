@@ -8,7 +8,6 @@ import { Console } from 'console'
     standalone: true,
     imports: [CommonModule, ResizableDirective],
     templateUrl: './board-layout.component.html',
-    styleUrl: './board-layout.component.scss',
 })
 export class BoardLayoutComponent {
     layoutConfig = {

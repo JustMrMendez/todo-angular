@@ -1,9 +1,11 @@
 <div
-    class="flex justify-between px-4 py-2 p-1 text-center rounded shadow items-center"
+    class="flex justify-between px-4 py-4 text-center rounded shadow items-center sticky top-0 bg-gray-800/30 backdrop-blur-lg z-50
+    
+    "
 >
     <div class="flex-grow">
         <div class="flex items-center space-x-4 justify-center transform transition duration-300">
-            <a routerLink="/" class="text-2xl font-extrabold text-blue-500 hover:text-red-500 shadow-lg">ByteBoard</a>
+            <span routerLink="/" class="text-2xl font-extrabold text-blue-500 hover:text-red-500 shadow-lg">ByteBoard</span>
             <span class="text-xl font-semibold text-gray-200">Interviews</span>
         </div>
         
@@ -15,16 +17,16 @@
     <div class="flex-grow">
         <div class="flex space-x-4">
             <button
-                class="px-6 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition duration-300"
+            class="px-4 py- border border-blue-500 text-blue-500 font-semibold rounded hover:bg-blue-500 hover:text-white transition duration-300"
             >
-                Interview Now
-            </button>
+            Login
+        </button>
             <button
-                class="px-4 py-2 border border-blue-500 text-blue-500 font-semibold rounded hover:bg-blue-500 hover:text-white transition duration-300"
+            class="px-6 py-1 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600 transition duration-300"
             >
-                Login
-            </button>
-        </div>
+            Interview Now
+        </button>
+    </div>
     </div>
 </div>
 <!-- app.component.html -->
